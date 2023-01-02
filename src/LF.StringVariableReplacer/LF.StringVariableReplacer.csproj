@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <PackageId>LF.StringVariableReplacer</PackageId>
+        <Authors>Levente Fabry</Authors>
+        <Company>LF</Company>
+        <Description>High-performance string variable replacer for texts.</Description>
+        <RepositoryUrl>https://github.com/leventefabry/LF.StringVariableReplacer</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>string, replacer, variable, builder</PackageTags>
+        <NeutralLanguage>en-US</NeutralLanguage>
+    </PropertyGroup>
+
+</Project>
