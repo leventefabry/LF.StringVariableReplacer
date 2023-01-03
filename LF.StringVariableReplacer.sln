@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LF.StringVariableReplacer",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LF.StringVariableReplacer.TestConsole", "src\LF.StringVariableReplacer.TestConsole\LF.StringVariableReplacer.TestConsole.csproj", "{4D38D4AF-52EF-4F78-8B14-715A068A00F6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{27A8078D-F931-4E9E-8C3B-F0F1222C43C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LF.StringVariableReplacer.UnitTest", "tests\LF.StringVariableReplacer.UnitTest\LF.StringVariableReplacer.UnitTest.csproj", "{6EE8B69A-6225-4C2C-89C0-891517115D1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6F782A40-12D5-4AA6-82D8-96D65A40F94C} = {33D2546E-BC70-4841-A25C-9A8F1EB1B39C}
 		{4D38D4AF-52EF-4F78-8B14-715A068A00F6} = {33D2546E-BC70-4841-A25C-9A8F1EB1B39C}
+		{6EE8B69A-6225-4C2C-89C0-891517115D1D} = {27A8078D-F931-4E9E-8C3B-F0F1222C43C1}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6F782A40-12D5-4AA6-82D8-96D65A40F94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +29,9 @@ Global
 		{4D38D4AF-52EF-4F78-8B14-715A068A00F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D38D4AF-52EF-4F78-8B14-715A068A00F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D38D4AF-52EF-4F78-8B14-715A068A00F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE8B69A-6225-4C2C-89C0-891517115D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE8B69A-6225-4C2C-89C0-891517115D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE8B69A-6225-4C2C-89C0-891517115D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE8B69A-6225-4C2C-89C0-891517115D1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

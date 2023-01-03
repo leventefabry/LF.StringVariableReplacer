@@ -52,6 +52,12 @@ namespace LF.StringVariableReplacer
         public IReplaceThis With(string value)
         {
             if (string.IsNullOrEmpty(_variableName)) throw new VariableNameEmptyException();
+
+            if (_replaceValues.ContainsKey(_variableName))
+            {
+                _replaceValues[_variableName] = value;
+                return this;
+            }
             
             _replaceValues.Add(_variableName, value);
             return this;
