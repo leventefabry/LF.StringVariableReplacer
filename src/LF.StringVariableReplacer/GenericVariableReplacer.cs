@@ -74,15 +74,15 @@ namespace LF.StringVariableReplacer
         /// <summary>
         /// Adds replace value. The variable name will be bind from the expression.
         /// </summary>
-        /// <param name="expression">The expression based on the given class</param>
+        /// <param name="variableNameExpression">The expression based on the given class</param>
         /// <param name="value">The manually given value</param>
         /// <returns>The instance of <see cref="GenericVariableReplacer{T}"/> class</returns>
         /// <exception cref="ReplaceWithException">Throws if can't get the variable name or value</exception>
-        public GenericVariableReplacer<T> AddReplaceValue(Expression<Func<T, string>> expression, string value)
+        public GenericVariableReplacer<T> AddReplaceValue(Expression<Func<T, string>> variableNameExpression, string value)
         {
             try
             {
-                var variableName = GetCorrectPropertyName(expression);
+                var variableName = GetCorrectPropertyName(variableNameExpression);
                 _replaceValues.Add(variableName, value);
                 return this;
             }
@@ -96,14 +96,14 @@ namespace LF.StringVariableReplacer
         /// Adds replace value. The value will be bind from the expression.
         /// </summary>
         /// <param name="variableName">The manually given variable name</param>
-        /// <param name="expression">The expression based on the given class</param>
+        /// <param name="valueExpression">The expression based on the given class</param>
         /// <returns>The instance of <see cref="GenericVariableReplacer{T}"/> class</returns>
         /// <exception cref="ReplaceWithException">Throws if can't get the variable name or value</exception>
-        public GenericVariableReplacer<T> AddReplaceValue(string variableName, Expression<Func<T, string>> expression)
+        public GenericVariableReplacer<T> AddReplaceValue(string variableName, Expression<Func<T, string>> valueExpression)
         {
             try
             {
-                var value = GetValueFromExpression(expression);
+                var value = GetValueFromExpression(valueExpression);
                 _replaceValues.Add(variableName, value);
 
                 return this;
